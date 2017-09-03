@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>OCR Application Upload</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/uploadStyle.css" rel="stylesheet" type="text/css"> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="/public/jquery.js"></script>
+      
+   </head>
+
+   <body>
+     <div id="header"></div>
+     <div id="blueBar">Cloud Capture demo application</div>
+          <p id="notes">
+       This is a test application for submitting an image to Concord's Cloud Capture platform for OCR processing and dynamic field extraction.  Please do not use for documents that contain Protected Health Information (PHI) or other sensitive data.
+
+       </p>
+      <div class="container" id="submission">
+        <p style="text-align: left">Submit a file to process (Supported file types: PNG)</p>
+        
+        <form action="/process" method="post" enctype="multipart/form-data">
+          <input type="file" name="ocrFileUpload">
+          <input type="submit">
+        </form>
+
+      </div>
+
+   </body>
+
+</html>

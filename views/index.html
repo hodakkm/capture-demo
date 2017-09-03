@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>OCR Application</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>OCR Application</h1>
+         <h3>Test application for Cloud Capture</h3>
+         
+        <h4>User Stories</h4>
+        <ol>
+          <li>I can submit a FormData object that includes a file upload to the /process route.</li>
+          <li>When I submit something, I will receive a taskID in the JSON response.</li>
+          <li>I can submit the taskID to the /task route and receive the JSON response</li>
+          <li>When the JSON response is returned from /task, it should be parsed to only show the annotations</li>
+        </ol>
+        <h4>API Reference:</h4>
+        <ul>
+          <li>Cloud Capture Production: <a href="https://capturestaging.concordfax.com/swagger#/ocr">link</a></li>
+        </ul>
+        <h4>User Interface:</h4>
+        <ul>
+          <li><a href="https://ocr-application.glitch.me/upload">link</a></li>
+        </ul>
+      </div>
+   </body>
+
+</html>

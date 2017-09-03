@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>OCR Application - Results</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+      <link href="/public/uploadStyle.css" rel="stylesheet" type="text/css"> 
+      
+   </head>
+
+   <body>
+     <div id="header"></div>
+     <div id="blueBar" class="row"><div class="col-sm-9">
+       Cloud Capture demo application</div>
+       <div class="col-sm-3">
+       <a href="https://ocr-application.glitch.me/upload" class="button">Submit new image</a>
+       </div></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8" id="imageDiv">
+            <img id="originalImage" src="https://ocr-application.glitch.me<%= filePath %>">
+          </div>
+          <div clas="col-sm-4" id="ocrResults">
+            <p>OCR results</p>
+
+              <div class="row resultRow">
+                <div class="col-sm-5">
+                 Patient Name: 
+                </div>
+                <div class="resultDiv col-sm-6">
+                  <%= patientName %>
+                </div>
+              </div>
+              <div class="row resultRow">
+                <div class="col-sm-5">
+                 Date of Birth:
+                </div>
+                <div class="resultDiv col-sm-6">
+                  <%= DOB %>
+                </div>
+              </div>
+              <div class="row resultRow">
+                <div class="col-sm-5">
+                 Social Security #:
+                </div>
+                <div class="resultDiv col-sm-6">
+                  <%= SSN %>
+                </div>
+              </div>
+            <br>
+            <p>
+              Plain text: <br>
+            </p>
+            <p id="plainText"> 
+              <%= plainText %>
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+   </body>
+
+</html>
